@@ -1,4 +1,4 @@
-#Sep 14 Lab works
+# Sep 14 Lab works
 
 Create git repository, connect it to GitHub
 
