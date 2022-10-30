@@ -1,0 +1,74 @@
+/* Author: Dongni Du */
+body {
+    background: #DDD78D;
+    color: #36454F;
+    font-family: Sans-Serif;
+}
+
+header, footer {
+    background: #60594D;
+    color: #93A29B;
+    border: 4px solid #36454F;
+    padding: 10px;
+}
+
+#webDevelopment {
+    font-size: 40px;
+    padding: 20px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 12pt;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    background: white;
+    border: 2px solid #36454F;
+    border-radius: 12px;
+    padding: 4px;
+}
+
+a:hover {
+    color: #8B635C;
+    background: #DCBF85;
+}
+
+h2 {
+    font-weight: bold;
+}
+
+p, li {
+    font-size: 14pt;
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 10px; 
+}
+
+.blockQuote {
+    background: #DCBF85;
+    text-align: center;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 10px;
+}
+
+ul > li > div {
+    font-weight: bold;
+}
+
+img {
+    float: right;
+    width: 25%;
+    margin: 10px;
+}
+
+#author {
+    text-align: right;
+    font-style: italic;
+    font-size: 10pt;
+    margin-top: 20px;
+}

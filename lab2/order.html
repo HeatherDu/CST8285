@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Order form</title>
+    <meta charset="UTF-8">
+    <meta name="author" content="Dongni Du">
+    <style>
+      table, th, td {
+        border: 1px solid black;
+      }
+      .block {
+        display: flex;
+        padding: 2px;
+      }
+      .label {
+        display: flex;
+        align-items: center;
+        min-width: 70px;
+      }
+      .cardBlock {
+        padding: 10px 0;
+      }
+      .cardLable {
+        width: 100px;
+        flex-direction: row-reverse;
+        margin-right: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <h2 style="color:rgb(233 110 53);">Order Form</h2>
+
+      <fieldset>
+        <legend>Basic Information</legend>
+
+        <div class="block">
+          <label class="label" for="name">Name:</label>
+          <input type="text" id="name" name="name" value="Dongni" size="30" disabled>
+        </div>
+
+        <div class="block">
+          <label class="label" for="email">Email:</label>
+          <input type="text" id="email" name="email" value="du000031@algonquinlive.com" size="30">
+        </div>
+
+        <div class="block">
+          <label class="label" for="address">Address:</label>
+          <textarea id="address" name="address" rows="6" cols="25"></textarea>
+        </div>
+
+        <div class="block">
+          <label class="label" for="postcode">Postcode:</label>
+          <input type="text" id="postcode" name="postcode" size="10">
+        </div>
+      </fieldset>
+      <br>
+
+      <fieldset>
+        <legend>Product Information</legend>
+
+        <table>
+          <tr>
+            <th>Product</th>
+            <th>Part Number</th>
+            <th>Quantity</th>
+            <th>Unit Price</th>
+            <th>Subtotal</th>
+          </tr>
+          <tr>
+            <td>Box</td>
+            <td>AC100</td>
+            <td>
+              <input type="text" id="box" name="box" size="10">
+            </td>
+            <td>$5</td>
+            <td>
+              <input type="text" id="boxSubtotal" name="boxSubtotal">
+            </td>
+          </tr>
+          <tr>
+            <td>Coffee Table</td>
+            <td>AC200</td>
+            <td>
+              <input type="text" id="coffeeTable" name="coffeeTable" size="10">
+            </td>
+            <td>$100</td>
+            <td>
+              <input type="text" id="coffeeTableSubtotal" name="coffeeTableSubtotal">
+            </td>
+          </tr>
+          <tr>
+            <td>Chair</td>
+            <td>AC300</td>
+            <td>
+              <input type="text" id="chair" name="chair" size="10">
+            </td>
+            <td>$150</td>
+            <td>
+              <input type="text" id="chairSubtotal" name="chairSubtotal">
+            </td>
+          </tr>
+          <tr>
+            <td>Desk</td>
+            <td>AC400</td>
+            <td>
+              <input type="text" id="desk" name="desk" size="10">
+            </td>
+            <td>$120</td>
+            <td>
+              <input type="text" id="deskSubtotal" name="deskSubtotal">
+            </td>
+          </tr>
+          <tr>
+            <td>Computer Table</td>
+            <td>AC500</td>
+            <td>
+              <input type="text" id="computerTable" name="computerTable" size="10">
+            </td>
+            <td>$130</td>
+            <td>
+              <input type="text" id="computerTableSubtotal" name="computerTableSubtotal">
+            </td>
+          </tr>
+          <tr>
+            <td style="text-align: right;" colspan="4">Total:</td>
+            <td>
+              <input type="text" id="total" name="total">
+            </td>
+          </tr>
+        </table>
+      </fieldset>
+
+      <h3>Credit Card Information</h3>
+
+      <div style="display: flex;">
+        <div>
+          <div>Card Type:</div>
+
+          <div>
+            <input type="radio" id="mastercard" name="cardType" value="mastercard">
+            <label for="mastercard">Mastercard</label>
+          </div>
+
+          <div>
+            <input type="radio" id="visa" name="cardType" value="visa">
+            <label for="visa">Visa</label>
+          </div>
+
+          <div>
+            <input type="radio" id="giftcard" name="cardType" value="giftcard">
+            <label for="giftcard">Gift Card</label>
+          </div>
+        </div>
+
+        <div>
+          <div class="block cardBlock">
+            <label class="label cardLable" for="cardNumber">Card Number:</label>
+            <input type="text" id="cardNumber" name="cardNumber">
+          </div>
+
+          <div class="block cardBlock">
+            <label class="label cardLable" for="expiryDate">Expiry date:</label>
+            <input type="date" id="expiryDate" name="expiryDate">
+          </div>
+        </div>
+      </div>
+
+      <div class="block">
+        <label class="label" style="margin-right: 5px; font-weight: bold;" for="deliveryAddress">Delivery Address:</label>
+        <textarea id="deliveryAddress" name="deliveryAddress" rows="6" cols="25"></textarea>
+      </div>
+
+      <div style="margin-top: 22px;">
+        <button type="submit">Send Order</button>
+        <button type="reset">Clear Form</button>
+      </div>
+    </form>
+  </body>
+</html>
